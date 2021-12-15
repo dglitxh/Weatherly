@@ -1,0 +1,102 @@
+body{
+	background:
+	 url(./img/john-towner-JgOeRuGD_Y4-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+	font-size: 2em;
+	
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#form{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+#form input{
+	background: none;
+	color: azure;
+	font-size: 60%;
+
+}
+
+#form button{
+	background: none;
+	color: azure;
+	font-size: 80%;
+}
+#form button:hover{
+	background: rgba(0, 255, 255, 0.219);
+	color: azure;
+	font-size: 80%;
+}
+
+.wrapper{
+	font-size: 100%;
+	color: azure;
+	justify-content: center;
+	/* background: rgba(0, 0, 0, 0.253); */
+	padding: 20px;
+	margin: 10%;
+	
+	
+}
+
+
+.img{
+	height: 32px;
+	width: 38px;
+	float: left;
+	margin-right: 15px;
+}
+
+.weather {
+	font-size: 200%;
+	
+}
+.weatherDesc {
+	margin-bottom: 0;
+	margin-bottom: 15px;
+
+}
+.temperature {
+	font-size: 600%;
+	margin: 0;
+	float: left;
+	border-right: 2px solid azure;
+	
+
+}
+.temperature span{
+	font-size: 20%;
+	margin-bottom: 0;
+	margin-right: 20px;
+
+}
+.location {
+	margin: 0;
+}
+
+.humidity {
+	padding-left: 10px;
+	margin-right: 4%;
+
+}
+.temperature{
+	padding-left: 10px;
+	margin-right: 4%;
+
+}
+.windSpeed{
+
+	padding-left: 10px;
+	margin-right: 4%;
+
+}
+.feel{
+
+	padding-left: 10px;
+	margin-right: 4%;
+	
+}
