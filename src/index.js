@@ -30,7 +30,7 @@ let city = 'Accra'
 
 // Async function for weather data
 const getWeather = async (loc) => {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apiKey}`,
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${apiKey}`,
     {
         mode:'cors'
     });
