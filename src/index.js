@@ -26,6 +26,26 @@ home.appendChild(container)
 const apiKey = 'ea21c2ee64bf2fd0f38674dc16e62852'
 let city = 'Accra'
 
+const displayWeather = (ob) => {
+    let wrapper = document.createElement('div')
+    wrapper.className = 'wrapper'
+    let obj  = ob
+    console.log(obj)
+    for (let i of Object.keys(obj)){
+        if (i == 'country'){
+            let img = document.createElement('img')
+            img.className = 'img'
+            img.src = `http://openweathermap.org/images/flags/${obj[i].toLowerCase()}.png`
+            wrapper.appendChild(img)
+        }else{
+        let p  = document.createElement('p')
+        p.innerHTML = `${obj[i]}`
+        p.className = i
+        console.log('thats amazing brother')
+        wrapper.appendChild(p)
+        }
+    }return wrapper
+}
 
 
 // Async function for weather data
@@ -57,26 +77,7 @@ const getWeather = async (loc) => {
 // src=
 }
 
-function displayWeather(ob){
-    let wrapper = document.createElement('div')
-    wrapper.className = 'wrapper'
-    let obj  = ob
-    console.log(obj)
-    for (let i of Object.keys(obj)){
-        if (i == 'country'){
-            let img = document.createElement('img')
-            img.className = 'img'
-            img.src = `http://openweathermap.org/images/flags/${obj[i].toLowerCase()}.png`
-            wrapper.appendChild(img)
-        }else{
-        let p  = document.createElement('p')
-        p.innerHTML = `${obj[i]}`
-        p.className = i
-        console.log('thats amazing brother')
-        wrapper.appendChild(p)
-        }
-    }return wrapper
-}
+
 
 getWeather(city)
 
