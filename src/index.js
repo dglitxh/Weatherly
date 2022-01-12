@@ -35,7 +35,7 @@ const displayWeather = (ob) => {
         if (i == 'country'){
             let img = document.createElement('img')
             img.className = 'img'
-            img.src = `http://openweathermap.org/images/flags/${obj[i].toLowerCase()}.png`
+            img.src = `https://openweathermap.org/images/flags/${obj[i].toLowerCase()}.png`
             wrapper.appendChild(img)
         }else{
         let p  = document.createElement('p')
