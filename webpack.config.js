@@ -1,5 +1,5 @@
 const path = require('path');
-const { output } = require('../YdxCodes/Javascript/restaurant/webpack.config');
+const { output } = require('./webpack.config');
 
 module.exports = {
     entry: './src/index.js',
