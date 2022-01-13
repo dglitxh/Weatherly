@@ -1,4 +1,4 @@
 # Weatherly
 A weather app made with javascript
 
-site: weatherlley.netlify.app
+site: https://weatherlley.netlify.app
